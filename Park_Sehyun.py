@@ -160,7 +160,7 @@ while (quit != 1 or quit > 2 or quit < 1):
                             escape = int(input(" = "))
                             print(clear)
                             if Classes[escape-1].currentLimit == Classes[escape-1].Limit:
-                                print("\nSorry!, this course has reached its maximum unit!")
+                                print("\nSorry! ", Classes[escape-1].Name, " has reached its maximum unit!")
                                 escape = 0
                             elif(escape!=0):
                                 Students[select-1].courseTaking.append(Classes[escape-1])
@@ -228,7 +228,7 @@ while (quit != 1 or quit > 2 or quit < 1):
                     esc = int(input(" = "))
                     print(clear)
                     if Classes[esc-1].currentLimit == Classes[esc-1].Limit:
-                        print("\nSorry!, this course has reached its maximum unit!")
+                        print("\nSorry! ", Classes[esc-1].Name, " has reached its maximum unit!")
                         esc = 0
                     elif (esc!=0):
                         name.addCourse(Classes[esc-1])
@@ -323,7 +323,4 @@ while (quit != 1 or quit > 2 or quit < 1):
     print(clear)
     
 print("...Terminating, Goodbye- bye!")
-        
-
-
         
